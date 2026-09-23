@@ -1,5 +1,5 @@
 # Capstone Design: Extended C2PA Framework
-Development of a Web Framework for Verifying the Integrity, Traceability, and Accountability of AI-Generated Content Based on Extended C2PA Metadata
+Development of a Web Framework for Verifying the Integrity, Traceability, and Accountability of AI-Generated Content Based on Extended C2PA Metadata<br>
 AI 산출물의 확장된 C2PA 메타데이터를 기반으로 무결성, 추적성, 책임성을 검증하기 위한 웹 프레임워크 개발
 
 ## Project Goals
