@@ -1,4 +1,4 @@
-# Capstone Design: PQ-C2PA
+# Capstone Design: PQ-C2PA-Transformer
 Development of a Post-Quantum C2PA Claim Signing Framework Based on ML-DSA and SHA-3<br>
 C2PA Claim 서명 알고리즘의 PQC ML-DSA 및 SHA-3 기반 전환 프레임워크 개발
 
