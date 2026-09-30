@@ -3,18 +3,6 @@ Development of a Post-Quantum C2PA Claim Signing Framework Based on ML-DSA and S
 C2PA Claim 서명 알고리즘의 PQC ML-DSA 및 SHA-3 기반 전환 프레임워크 개발
 
 ## Project Goals
-
-본 프로젝트는 웹 기반 **PQ-C2PA 변환 및 검증 프레임워크**를 구축하여, 기존 C2PA에서 사용하는 암호 체계를 양자내성 환경에 적합한 형태로 최신화하는 것을 목표로 한다.<br>
-기존 서명 알고리즘은 NIST 표준 양자내성 전자서명 알고리즘인 **ML-DSA**로 교체하고, 어설션 참조·하드 바인딩·타임스탬프 등에 사용되는 해시 체계에는 **SHA-3**를 적용하여 양자컴퓨팅과 잠재적인 미래 암호 위협에 대응한다.<br><br>
-
-프레임워크는 기존 C2PA 이미지에서 이전 가능한 어설션 데이터를 추출한 후, 새로운 하드 바인딩, 클레임, ML-DSA 서명 및 타임스탬프를 생성한다.<br>
-기존 매니페스트와 새 매니페스트를 병렬로 유지하지 않고, 기존 매니페스트를 프레임워크가 생성한 **단일 PQ-C2PA 매니페스트로 완전히 교체**한다.<br><br>
-
-매니페스트, 어설션, JUMBF, CBOR, COSE 및 타임스탬프와 같은 C2PA의 핵심 데이터 구조와 처리 원칙은 표준 기술 규격을 기반으로 한다.<br>
-다만 SHA-3와 ML-DSA를 적용하기 위해 별도의 PQ-C2PA 암호 프로파일을 정의하며, 기존 서명키 교체로 발생하는 신뢰 문제를 해결하기 위해 자체적인 **X.509 인증서 체계, PKI 검증 구조, CA·TSA 및 신뢰 체인 아키텍처**를 설계한다.<br><br>
-
-최종적으로 사용자가 웹에서 기존 C2PA 이미지를 제출하면, 프레임워크가 이를 PQ-C2PA 이미지로 변환하고 새로운 매니페스트의 무결성, 서명, 인증서 및 타임스탬프를 검증할 수 있는 종단 간 환경을 제공하는 것을 목표로 한다.<br><br>
-
 This project aims to develop a web-based **PQ-C2PA transformation and verification framework** that modernizes the cryptographic foundation of conventional C2PA for a post-quantum environment.<br>
 Existing signature algorithms will be replaced with **ML-DSA**, a NIST-standardized post-quantum digital signature algorithm, while **SHA-3** will be applied to assertion references, asset hard bindings, timestamps, and other integrity-related operations. This enables the framework to address risks arising from quantum computing and potential future cryptographic threats.<br><br>
 
@@ -26,6 +14,17 @@ However, a dedicated PQ-C2PA cryptographic profile will be defined to support SH
 
 Ultimately, the project will provide an end-to-end web environment in which users can submit an existing C2PA-enabled image, transform it into a PQ-C2PA-protected image, and verify the integrity, digital signature, certificate, and timestamp of the newly generated manifest.
 
+
+본 프로젝트는 웹 기반 **PQ-C2PA 변환 및 검증 프레임워크**를 구축하여, 기존 C2PA에서 사용하는 암호 체계를 양자내성 환경에 적합한 형태로 최신화하는 것을 목표로 한다.<br>
+기존 서명 알고리즘은 NIST 표준 양자내성 전자서명 알고리즘인 **ML-DSA**로 교체하고, 어설션 참조·하드 바인딩·타임스탬프 등에 사용되는 해시 체계에는 **SHA-3**를 적용하여 양자컴퓨팅과 잠재적인 미래 암호 위협에 대응한다.<br><br>
+
+프레임워크는 기존 C2PA 이미지에서 이전 가능한 어설션 데이터를 추출한 후, 새로운 하드 바인딩, 클레임, ML-DSA 서명 및 타임스탬프를 생성한다.<br>
+기존 매니페스트와 새 매니페스트를 병렬로 유지하지 않고, 기존 매니페스트를 프레임워크가 생성한 **단일 PQ-C2PA 매니페스트로 완전히 교체**한다.<br><br>
+
+매니페스트, 어설션, JUMBF, CBOR, COSE 및 타임스탬프와 같은 C2PA의 핵심 데이터 구조와 처리 원칙은 표준 기술 규격을 기반으로 한다.<br>
+다만 SHA-3와 ML-DSA를 적용하기 위해 별도의 PQ-C2PA 암호 프로파일을 정의하며, 기존 서명키 교체로 발생하는 신뢰 문제를 해결하기 위해 자체적인 **X.509 인증서 체계, PKI 검증 구조, CA·TSA 및 신뢰 체인 아키텍처**를 설계한다.<br><br>
+
+최종적으로 사용자가 웹에서 기존 C2PA 이미지를 제출하면, 프레임워크가 이를 PQ-C2PA 이미지로 변환하고 새로운 매니페스트의 무결성, 서명, 인증서 및 타임스탬프를 검증할 수 있는 종단 간 환경을 제공하는 것을 목표로 한다.<br><br>
 
 ## Tech Stack
 
