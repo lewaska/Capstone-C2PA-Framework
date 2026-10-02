@@ -27,10 +27,11 @@ Ultimately, the project will provide an end-to-end web environment in which user
 
 ## Tech Stack
 
-- Frontend: TBD
-- Backend: TBD
-- Database: TBD
+- Frontend: Daegyu
+- Backend: Sieun 
+- Server: Sumin 
 - Content Provenance: C2PA
+- Algorithms: ML-DSA, SHA-3
 
 ## Status
 
