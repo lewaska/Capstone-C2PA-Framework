@@ -25,10 +25,10 @@ Ultimately, the project will provide an end-to-end web environment in which user
 
 최종적으로 사용자가 웹에서 기존 C2PA 이미지를 제출하면, 프레임워크가 이를 PQ-C2PA 이미지로 변환하고 새로운 매니페스트의 무결성, 서명, 인증서 및 타임스탬프를 검증할 수 있는 종단 간 환경을 제공하는 것을 목표로 한다.<br>
 
-## Tech Stack
+## Role
 
 - Frontend: Daegyu
-- Backend: Sieun 
+- Backend: mainly Sieun
 - Server: Sumin 
 - Content Provenance: C2PA
 - Algorithms: ML-DSA, SHA-3
